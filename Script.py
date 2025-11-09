@@ -59,7 +59,8 @@ any Windows computer, even without Python installed.
 ========================================================================
 """
 
-# --- Your script starts below this line ---
+
+
 
 import requests # type: ignore
 # ... (rest of your script) ...
@@ -198,4 +199,5 @@ def main():
 # It means "Only run the main() function if this script is executed directly"
 # (as opposed to being imported by another script).
 if __name__ == "__main__":
+
     main()
