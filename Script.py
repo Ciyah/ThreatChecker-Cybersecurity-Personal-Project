@@ -1,67 +1,3 @@
-"""
-========================================================================
-                    ThreatChecker: A DOMAIN REPUTATION CHECKER
-========================================================================
-A command-line tool to check the reputation of a domain by querying the
-VirusTotal API.
-
-------------------------------------------------------------------------
-                        SETUP INSTRUCTIONS
-------------------------------------------------------------------------
-1. Install Dependencies:
-   This script requires the 'requests' library. If it's not installed,
-   run this in your terminal:
-   python -m pip install requests
-
-2. Set API Key:
-   You MUST get a free API key from VirusTotal.com.
-   Paste your new, private key into the 'API_KEY' variable on line 21.
-
-------------------------------------------------------------------------
-                        COMMAND GUIDE
-------------------------------------------------------------------------
-Run this script from your terminal (like the VS Code terminal).
-You must provide a domain using the -d or --domain flag.
-
---- Basic Syntax ---
-python Script.py -d <domain_to_check>
-
---- Your Specific Command (using your full Python path) ---
-& C:/Users/user/AppData/Local/Programs/Python/Python314/python.exe c:/Users/user/OneDrive/Desktop/Script.py -d <domain_to_check>
-
---- Example (Safe Domain) ---
-& C:/Users/user/AppData/Local/Programs/Python/Python314/python.exe c:/Users/user/OneDrive/Desktop/Script.py -d google.com
-
---- Example (Malicious Test Domain) ---
-& C:/Users/user/AppData/Local/Programs/Python/Python314/python.exe c:/Users/user/OneDrive/Desktop/Script.py -d wicar.org
-
-------------------------------------------------------------------------
-             HOW TO CREATE A .EXE (EXECUTABLE)
-------------------------------------------------------------------------
-This turns your script into a standalone .exe file that can be run on
-any Windows computer, even without Python installed.
-
-1. Install PyInstaller:
-   python -m pip install pyinstaller
-
-2. Navigate to your script's folder in the terminal:
-   cd C:\Users\user\OneDrive\Desktop
-
-3. Run the PyInstaller command (using a name like "ThreatCheck"):
-   pyinstaller --onefile -n ThreatCheck.exe Script.py
-
-4. Find your file:
-   Your new 'ThreatCheck.exe' file will be inside a new folder
-   named 'dist'.
-
-5. Run your new .exe from the terminal:
-   .\ThreatCheck.exe -d wicar.org
-========================================================================
-"""
-
-
-
-
 import requests # type: ignore
 # ... (rest of your script) ...
 import requests # type: ignore # Used to make HTTP requests to the VirusTotal API.
@@ -201,3 +137,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
