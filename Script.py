@@ -8,7 +8,7 @@ import time                    # Used to convert the 'last_analysis_date' (a num
 # --- CONFIGURATION ---
 # (You MUST get a free API key from VirusTotal.com)
 # TODO: Paste your NEW, freshly-generated API key here.
-API_KEY = "90502837cbf0f5281c8b93f16cf2d1be8fa14e8686e5d3b96edcc6f443e9ec27"
+API_KEY = "YOUR_NEW_API_KEY_HERE"
 # ---------------------
 
 def check_domain_reputation(domain):
@@ -137,4 +137,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
