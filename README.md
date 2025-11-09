@@ -1,13 +1,19 @@
 # ThreatChecker
-> 🐍 A simple Python CLI tool to check domain reputation using the VirusTotal API.
+> 🐍 A cross-platform Python CLI tool to automate domain reputation checks using the VirusTotal API.
 
 ---
 
 ## 💡 About This Project
-ThreatChecker is a Python command-line tool to automate domain threat intelligence gathering. It queries the **VirusTotal API** using the `requests` library to fetch and parse malicious/suspicious domain reports. The tool features a user-friendly CLI built with `argparse`, robust error handling for API-related issues, and can be packaged into a standalone Windows executable (`.exe`) using **PyInstaller**.
+ThreatChecker is a simple, cross-platform Python tool that automates domain reputation checks by querying the **VirusTotal API**. Built with `requests` and `argparse`, it provides a fast and easy way to get threat intelligence directly from your terminal.
+
+## ✨ Features
+* **Automated Lookups:** Instantly check domain reputation.
+* **Cross-Platform:** Runs natively on Windows, macOS, and Linux.
+* **Simple CLI:** Uses `argparse` for easy-to-use command-line flags.
+* **Standalone:** Can be bundled into a single executable for any OS.
 
 ### Topics
-`python` `cybersecurity` `cli` `virustotal` `api` `threat-intelligence` `automation` `security-tool`
+`python` `cybersecurity` `cli` `virustotal` `api` `threat-intelligence` `automation` `security-tool` `cross-platform`
 
 ---
 
@@ -28,11 +34,6 @@ Run this script from your terminal. You must provide a domain using the `-d` or 
     python Script.py -d <domain_to_check>
     ```
 
-* **Full Path Command (Windows Example)**
-    ```bash
-    & C:/Users/user/AppData/Local/Programs/Python/Python314/python.exe c:/Users/user/OneDrive/Desktop/Script.py -d <domain_to_check>
-    ```
-
 * **Examples**
     ```bash
     # Check a safe domain
@@ -44,24 +45,31 @@ Run this script from your terminal. You must provide a domain using the `-d` or 
 
 ---
 
-## 📦 How to Create a .EXE (Executable)
-This turns your script into a standalone `.exe` file that can be run on any Windows computer, even without Python installed.
+## 📦 How to Create a Standalone Executable
+You can bundle this script into a **single executable** for your operating system so you can run it without needing to install Python.
 
 1.  **Install PyInstaller:**
     ```bash
     python -m pip install pyinstaller
     ```
-2.  **Navigate to your script's folder:**
-    ```bash
-    cd C:\Users\user\OneDrive\Desktop
-    ```
-3.  **Run the PyInstaller command:**
-    ```bash
-    pyinstaller --onefile -n ThreatChecker.exe Script.py
-    ```
-4.  **Find your file:** Your new `ThreatChecker.exe` will be inside a new `dist` folder.
+2.  **Run the build command:**
+    PyInstaller will create an executable for the OS you are currently on.
 
-5.  **Run your new .exe:**
+    * **On Windows (.exe):**
+        ```bash
+        pyinstaller --onefile -n ThreatChecker.exe Script.py
+        ```
+    * **On macOS or Linux:**
+        ```bash
+        pyinstaller --onefile -n ThreatChecker Script.py
+        ```
+3.  **Find your file:** Your new executable (`ThreatChecker.exe` or `ThreatChecker`) will be inside the new `dist` folder.
+
+4.  **Run your new executable:**
     ```bash
-    .\ThreatChecker.exe -d wicar.org
+    # On Windows
+    .\dist\ThreatChecker.exe -d wicar.org
+
+    # On macOS/Linux
+    ./dist/ThreatChecker -d wicar.org
     ```
