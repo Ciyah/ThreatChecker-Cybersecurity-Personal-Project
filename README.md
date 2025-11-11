@@ -13,7 +13,7 @@ ThreatChecker is a simple, cross-platform Python tool that automates domain repu
 * **Standalone:** Can be bundled into a single executable for any OS.
 
 ## 🛠️ Tech Stack
-* **Python:** The core language for the script.
+* **`Python`:** The core language for the script.
 * **`requests`:** Used to make HTTP requests to the VirusTotal API.
 * **`argparse`:** Used to create the professional command-line interface (handling the `-d` flag).
 * **`PyInstaller`:** Used to package the script into a standalone, cross-platform executable.
