@@ -76,10 +76,10 @@ You can bundle this script into a **single executable** for your operating syste
     
      * **On Windows**
     ```bash
-    .\dist\ThreatChecker.exe -d wicar.org
+    .\dist\ThreatChecker.exe -d test123Website.com
     ```
 
     * **On macOS/Linux**
     ```bash
-    ./dist/ThreatChecker -d wicar.org
+    ./dist/ThreatChecker -d test123Website.com
     ```
