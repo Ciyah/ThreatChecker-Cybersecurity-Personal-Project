@@ -41,11 +41,14 @@ Run this script from your terminal. You must provide a domain using the `-d` or 
     ```
 
 * **Examples**
+    
+    * **Check a safe domain**
     ```bash
-    # Check a safe domain
     python Script.py -d google.com
+    ```
 
-    # Check a malicious test domain
+    * **Check a malicious test domain**
+    ```bash
     python Script.py -d wicar.org
     ```
 
@@ -69,13 +72,14 @@ You can bundle this script into a **single executable** for your operating syste
         ```bash
         pyinstaller --onefile -n ThreatChecker Script.py
         ```
-3.  **Find your file:** Your new executable (`ThreatChecker.exe` or `ThreatChecker`) will be inside the new `dist` folder.
-
-4.  **Run your new executable:**
+3.  **Find  and run your executable:** Your new executable (`ThreatChecker.exe` or `ThreatChecker`) will be inside the new `dist` folder.
+    
+     * **On Windows**
     ```bash
-    # On Windows
     .\dist\ThreatChecker.exe -d wicar.org
+    ```
 
-    # On macOS/Linux
+    * **On macOS/Linux**
+    ```bash
     ./dist/ThreatChecker -d wicar.org
     ```
